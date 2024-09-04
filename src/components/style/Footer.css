@@ -1,0 +1,55 @@
+.footer {
+    background-color: #0f2453;
+    padding: 20px 0; /* Reduced from 40px to 20px */
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* New style for companies label */
+.companies-label {
+    margin-right: auto; /* Push to the left */
+    padding-left: 20px; /* Add some padding from the left edge */
+}
+
+.social-media {
+    margin-left: auto; /* Push to the right */
+    padding-right: 20px; /* Add some padding from the right edge */
+}
+
+.social-media a {
+    color: white;
+    margin-left: 15px; /* Slightly reduced from 20px */
+    text-decoration: none;
+    font-size: 18px; /* Slightly reduced from 20px */
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0; /* Further reduced for mobile */
+    }
+
+    .footer-container {
+        padding: 10px; /* Reduced from 20px */
+    }
+    
+    .companies-label,
+    .social-media {
+        margin: 5px 0; /* Reduced from 10px */
+        padding: 0;
+    }
+    
+    .social-media a {
+        margin: 0 8px; /* Slightly reduced from 10px */
+    }
+}
